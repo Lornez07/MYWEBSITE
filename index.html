@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#071426" />
+    <meta
+      name="description"
+      content="Lorenz F. Estrella is a Computer Science graduate building web, mobile, and connected products around real-world workflows."
+    />
+    <meta property="og:title" content="Lorenz F. Estrella — Full-stack developer" />
+    <meta
+      property="og:description"
+      content="Web, mobile, and connected products built around real-world workflows."
+    />
+    <meta property="og:type" content="website" />
+    <title>Lorenz F. Estrella — Full-stack developer</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header" id="site-header">
+      <a class="wordmark" href="#home" aria-label="Lorenz Estrella, home">
+        <span class="wordmark-mark" aria-hidden="true">LE</span>
+        <span>Lorenz Estrella</span>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+        <a href="#home" class="is-active">Desk</a>
+        <a href="#about">README</a>
+        <a href="#skills">Stack</a>
+        <a href="#projects">Work</a>
+        <a href="#experience">Log</a>
+        <a href="#contact" class="nav-contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section" id="home" aria-labelledby="hero-title">
+        <div class="hero-photo" aria-hidden="true">
+          <img
+            src="/portrait.webp"
+            alt=""
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="hero-eyebrow"><span></span> Full-stack developer / Valenzuela, PH</p>
+          <h1 id="hero-title">Lorenz F.<br />Estrella</h1>
+          <p class="hero-tagline">
+            Software should make hard things feel simple.
+          </p>
+          <p class="hero-description">
+            I build web, mobile, and connected products around real workflows —
+            from parking systems that talk to hardware to inventory tools that
+            keep every movement accountable.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Open the workbench</a>
+            <a class="button button-quiet" href="#contact">Start a conversation</a>
+          </div>
+          <div class="hero-session" aria-label="Current availability">
+            <span class="session-pulse"></span>
+            <span>OPEN TO FREELANCE &amp; COLLABORATION</span>
+            <span class="session-divider"></span>
+            <span>WEB / MOBILE / SYSTEMS</span>
+          </div>
+        </div>
+        <a class="scroll-indicator" href="#about" aria-label="Scroll to About">
+          <span></span>
+          <span class="scroll-label">Read my notes</span>
+        </a>
+        <p class="hero-location">Valenzuela, Philippines</p>
+      </section>
+
+      <section class="content-section about-section" id="about">
+        <div class="section-shell about-layout">
+          <div class="section-heading reveal">
+            <p class="section-eyebrow">01 / README.md</p>
+            <h2>Built from<br />curiosity.</h2>
+          </div>
+          <div class="about-copy reveal">
+            <p class="lead">
+              I’m a Computer Science graduate who likes getting close to the
+              problem before deciding what to build.
+            </p>
+            <p>
+              That has taken me from a camera-based plate recognition workflow
+              to a parking app connected to a physical barrier, and from there
+              into inventory systems, commerce, and conversational AI.
+            </p>
+            <p>
+              I care about the details behind the interface: what happens when
+              a scan is uncertain, an order is retried, or a device loses its
+              connection. I’m looking for work where thoughtful engineering
+              makes everyday tasks work better.
+            </p>
+            <div class="about-facts">
+              <div>
+                <span>Based in</span>
+                <strong>Valenzuela, Philippines</strong>
+              </div>
+              <div>
+                <span>Currently</span>
+                <strong>Open to freelance &amp; collaboration</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section skills-section" id="skills">
+        <div class="section-shell">
+          <div class="section-heading section-heading-wide reveal">
+            <div>
+              <p class="section-eyebrow">02 / package.json</p>
+              <h2>A toolkit in progress.</h2>
+            </div>
+            <p class="section-intro">
+              The tools change with the problem. These are the ones I reach for
+              most.
+            </p>
+          </div>
+          <div class="skill-grid">
+            <article class="skill-group reveal">
+              <span class="skill-index">CORE</span>
+              <h3>Technical skills</h3>
+              <p>From interface to data layer and mobile.</p>
+              <ul class="skill-tags">
+                <li>React</li><li>Next.js</li><li>TypeScript</li>
+                <li>Flutter</li><li>Dart</li><li>Node.js</li>
+                <li>Python</li><li>Firebase</li><li>Supabase</li>
+                <li>Postgres</li><li>MongoDB</li><li>REST APIs</li>
+                <li>AI &amp; IoT</li>
+              </ul>
+            </article>
+            <article class="skill-group reveal">
+              <span class="skill-index">TOOLS</span>
+              <h3>Development tools</h3>
+              <p>Everyday tools for building and delivery.</p>
+              <ul class="skill-tags">
+                <li>Git &amp; GitHub</li><li>Figma</li>
+                <li>Postman</li><li>Vercel</li>
+                <li>Linux</li><li>Firebase</li>
+              </ul>
+            </article>
+            <article class="skill-group reveal">
+              <span class="skill-index">DESIGN</span>
+              <h3>Creative skills</h3>
+              <p>Turning an early idea into a useful experience.</p>
+              <ul class="skill-tags">
+                <li>Interface prototyping</li>
+                <li>AI prompt engineering</li>
+                <li>Product thinking</li>
+              </ul>
+            </article>
+            <article class="skill-group reveal">
+              <span class="skill-index">WORK</span>
+              <h3>How I work</h3>
+              <p>Staying curious while solving the problem at hand.</p>
+              <ul class="skill-tags">
+                <li>Problem-solving</li>
+                <li>Continuous learning</li>
+                <li>Clean-code practice</li>
+                <li>Independent projects</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section projects-section" id="projects">
+        <div class="section-shell projects-intro reveal">
+          <div>
+            <p class="section-eyebrow">03 / workspace</p>
+            <h2>Inside the build.</h2>
+          </div>
+          <p class="section-intro">
+            Pick a project from the explorer. Each one opens to a different
+            problem, interface, and set of trade-offs.
+          </p>
+        </div>
+
+        <div class="section-shell project-workspace reveal">
+          <div class="workspace-titlebar">
+            <div class="window-controls" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <p class="workspace-path">lorenz / <strong>workbench</strong> / projects</p>
+            <p class="workspace-presence"><span></span> LOCAL SESSION</p>
+          </div>
+          <div class="workspace-frame">
+            <aside class="workspace-sidebar" aria-label="Project explorer">
+              <div class="workspace-sidebar-heading">
+                <span>EXPLORER</span><span aria-hidden="true">⌄</span>
+              </div>
+              <div class="workspace-project-list" role="tablist" aria-label="Choose a project" aria-orientation="vertical">
+                <button class="workspace-project is-active" id="tab-convergent" type="button" role="tab" aria-selected="true" aria-controls="project-convergent" tabindex="0">
+                  <span class="workspace-file-icon file-flutter" aria-hidden="true">F</span>
+                  <span class="workspace-project-name">Convergent Scanner<small>mobile / vision</small></span>
+                  <span class="workspace-project-index">01</span>
+                </button>
+                <button class="workspace-project" id="tab-epark" type="button" role="tab" aria-selected="false" aria-controls="project-epark" tabindex="-1">
+                  <span class="workspace-file-icon file-iot" aria-hidden="true">⌁</span>
+                  <span class="workspace-project-name">E-Park Mo<small>mobile / IoT</small></span>
+                  <span class="workspace-project-index">02</span>
+                </button>
+                <button class="workspace-project" id="tab-erp" type="button" role="tab" aria-selected="false" aria-controls="project-erp" tabindex="-1">
+                  <span class="workspace-file-icon file-ts" aria-hidden="true">TS</span>
+                  <span class="workspace-project-name">Demo Trade ERP<small>web / operations</small></span>
+                  <span class="workspace-project-index">03</span>
+                </button>
+                <button class="workspace-project" id="tab-shop" type="button" role="tab" aria-selected="false" aria-controls="project-shop" tabindex="-1">
+                  <span class="workspace-file-icon file-commerce" aria-hidden="true">N</span>
+                  <span class="workspace-project-name">ShopCommerce<small>web / commerce</small></span>
+                  <span class="workspace-project-index">04</span>
+                </button>
+                <button class="workspace-project" id="tab-marqai" type="button" role="tab" aria-selected="false" aria-controls="project-marqai" tabindex="-1">
+                  <span class="workspace-file-icon file-ai" aria-hidden="true">✳</span>
+                  <span class="workspace-project-name">MarqAI<small>web / voice</small></span>
+                  <span class="workspace-project-index">05</span>
+                </button>
+              </div>
+              <div class="workspace-sidebar-footer">
+                <span>WORKSPACE</span>
+                <strong>5 projects</strong>
+              </div>
+            </aside>
+            <div class="workspace-main">
+              <div class="workspace-tabbar">
+                <span class="workspace-tab-file"><span aria-hidden="true">◈</span> project.preview</span>
+                <span class="workspace-tab-count"><span class="workspace-current">01</span> / 05</span>
+              </div>
+              <div class="project-grid">
+            <article class="project-card is-active" id="project-convergent" role="tabpanel" aria-labelledby="tab-convergent" tabindex="0">
+              <div class="project-art art-scanner" aria-hidden="true">
+                <div class="scanner-screen">
+                  <div class="preview-toolbar">
+                    <span>VEHICLE INTAKE</span>
+                    <span class="preview-live"><i></i> CAMERA READY</span>
+                  </div>
+                  <div class="scanner-feed">
+                    <div class="camera-grid"></div>
+                    <div class="scan-target">
+                      <span class="scan-corner corner-tl"></span>
+                      <span class="scan-corner corner-tr"></span>
+                      <span class="scan-corner corner-bl"></span>
+                      <span class="scan-corner corner-br"></span>
+                      <div class="vehicle-shape"><span></span><i></i></div>
+                      <div class="plate-read">ABC 1234</div>
+                      <span class="scan-line"></span>
+                    </div>
+                    <span class="camera-hint">AUTO-SCAN / POINT AT PLATE</span>
+                  </div>
+                  <div class="scan-result">
+                    <span><small>LAST RECOGNIZED</small><strong>ABC 1234</strong></span>
+                    <span class="scan-confidence">VALIDATED</span>
+                  </div>
+                </div>
+                <span class="art-caption">INTERFACE STUDY / SCAN FLOW</span>
+              </div>
+              <div class="project-copy">
+                <p class="project-type">Internship / Mobile &amp; web</p>
+                <h3>Convergent Scanner</h3>
+                <p>
+                  A cross-platform license plate recognition app designed
+                  around a fast, reliable scan workflow.
+                </p>
+                <p class="project-detail">
+                  Built an on-device Auto-Scan camera pipeline with Google ML
+                  Kit, then connected cloud-assisted validation for difficult
+                  reads.
+                </p>
+                <ul class="project-tech" aria-label="Technologies used">
+                  <li>Flutter</li><li>Dart</li><li>Google ML Kit</li>
+                  <li>Roboflow</li><li>Plate Recognizer</li>
+                </ul>
+                <details class="project-more">
+                  <summary>View project details</summary>
+                  <p>
+                    The scanner combines real-time text recognition with
+                    region-aware correction and server-side plate validation.
+                    Auto-Scan recognition runs on-device at up to 30 fps.
+                  </p>
+                </details>
+                <p class="project-note">
+                  Internship project. Demo and source are not publicly linked.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card" id="project-epark" role="tabpanel" aria-labelledby="tab-epark" tabindex="0" hidden>
+              <div class="project-art art-parking" aria-hidden="true">
+                <div class="parking-screen">
+                  <div class="preview-toolbar">
+                    <span>SAMPLE LOT A</span>
+                    <span class="preview-live"><i></i> CONNECTED</span>
+                  </div>
+                  <div class="parking-summary">
+                    <span><small>AVAILABLE SPACES</small><strong>08 <i>/ 24</i></strong></span>
+                    <span class="parking-open">GATE OPEN</span>
+                  </div>
+                  <div class="parking-map">
+                    <div class="parking-lane"><span>A1</span><b class="slot-occupied">P</b><b class="slot-open">P</b><b class="slot-occupied">P</b><b class="slot-open">P</b><span>A2</span></div>
+                    <div class="parking-lane"><span>B1</span><b class="slot-open">P</b><b class="slot-occupied">P</b><b class="slot-open">P</b><b class="slot-open">P</b><span>B2</span></div>
+                    <div class="parking-road"><span>ENTRY / EXIT</span><i></i></div>
+                  </div>
+                  <div class="parking-footer"><span>RESERVATIONS</span><strong>View availability <b>↗</b></strong></div>
+                </div>
+                <span class="art-caption">INTERFACE STUDY / SAMPLE LOT</span>
+              </div>
+              <div class="project-copy">
+                <p class="project-type">Thesis / Mobile &amp; IoT</p>
+                <h3>E-Park Mo</h3>
+                <p>
+                  A smart parking system for live space monitoring,
+                  reservations, and barrier control.
+                </p>
+                <ul class="project-tech" aria-label="Technologies used">
+                  <li>Flutter</li><li>Firebase</li><li>ESP32</li><li>IoT</li>
+                </ul>
+                <details class="project-more">
+                  <summary>View project details</summary>
+                  <p>
+                    The mobile app connects Firebase-backed parking
+                    availability and reservations to ESP32 hardware controlling
+                    the lot’s barrier.
+                  </p>
+                </details>
+                <div class="project-actions">
+                  <a
+                    class="project-action"
+                    href="https://e-park-mo-fe42a.web.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live preview <span aria-hidden="true">↗</span>
+                  </a>
+                  <a
+                    class="project-action"
+                    href="https://github.com/Lornez07/eparkmo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Source code <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" id="project-erp" role="tabpanel" aria-labelledby="tab-erp" tabindex="0" hidden>
+              <div class="project-art art-erp" aria-hidden="true">
+                <div class="erp-screen">
+                  <div class="preview-toolbar">
+                    <span>INVENTORY / MOVEMENTS</span>
+                    <span class="erp-filter">SAMPLE DATA</span>
+                  </div>
+                  <div class="erp-summary">
+                    <span><small>STOCK ON HAND</small><strong>1,284 <i>units</i></strong></span>
+                    <span><small>POSTED ORDERS</small><strong>036</strong></span>
+                    <span><small>LAST SYNC</small><strong>NOW</strong></span>
+                  </div>
+                  <div class="ledger-table">
+                    <div class="ledger-row ledger-head"><span>ITEM</span><span>MOVEMENT</span><span>QTY</span><span>STATUS</span></div>
+                    <div class="ledger-row"><span><i class="ledger-dot dot-blue"></i>Component A</span><span>Stock in</span><span>+120</span><b>POSTED</b></div>
+                    <div class="ledger-row"><span><i class="ledger-dot dot-violet"></i>Component B</span><span>Order #1042</span><span>−08</span><b>POSTED</b></div>
+                    <div class="ledger-row"><span><i class="ledger-dot dot-gold"></i>Material C</span><span>Adjustment</span><span>+16</span><b>POSTED</b></div>
+                  </div>
+                  <div class="erp-integrity"><span><i></i> LEDGER INTEGRITY</span><strong>Stock derives from posted movements</strong></div>
+                </div>
+                <span class="art-caption">INTERFACE STUDY / SAMPLE LEDGER</span>
+              </div>
+              <div class="project-copy">
+                <p class="project-type">Product build / Business systems</p>
+                <h3>Demo Trade ERP</h3>
+                <p>
+                  A mini-ERP built around dependable inventory, order posting,
+                  and role-based access.
+                </p>
+                <ul class="project-tech" aria-label="Technologies used">
+                  <li>React</li><li>TypeScript</li><li>Supabase</li><li>Postgres</li>
+                </ul>
+                <details class="project-more">
+                  <summary>View project details</summary>
+                  <p>
+                    Stock is derived from an append-only movement ledger.
+                    Postgres RPCs use row locks for order posting, while
+                    row-level security enforces access control.
+                  </p>
+                </details>
+                <div class="project-actions">
+                  <a
+                    class="project-action"
+                    href="https://erp-system-demos.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live preview <span aria-hidden="true">↗</span>
+                  </a>
+                  <a
+                    class="project-action"
+                    href="https://github.com/Lornez07/erp-system"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Source code <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" id="project-shop" role="tabpanel" aria-labelledby="tab-shop" tabindex="0" hidden>
+              <div class="project-art art-commerce" aria-hidden="true">
+                <div class="commerce-screen">
+                  <div class="preview-toolbar">
+                    <span>SHOPCOMMERCE</span>
+                    <span class="commerce-menu">SHOP &nbsp; / &nbsp; ABOUT &nbsp; / &nbsp; BAG (0)</span>
+                  </div>
+                  <div class="commerce-heading"><span>PRODUCTS FOR<br />EVERYDAY USE.</span><small>CATALOG / PREVIEW</small></div>
+                  <div class="commerce-products">
+                    <div class="commerce-product"><div class="product-object object-vase"><i></i></div><span>FORM 01 <b>$48</b></span></div>
+                    <div class="commerce-product"><div class="product-object object-lamp"><i></i></div><span>FORM 02 <b>$72</b></span></div>
+                    <div class="commerce-product"><div class="product-object object-bowl"><i></i></div><span>FORM 03 <b>$36</b></span></div>
+                  </div>
+                  <div class="commerce-foot"><span>SECURE CHECKOUT</span><span>POWERED BY STRIPE ↗</span></div>
+                </div>
+                <span class="art-caption">INTERFACE STUDY / SAMPLE STOREFRONT</span>
+              </div>
+              <div class="project-copy">
+                <p class="project-type">Product build / E-commerce</p>
+                <h3>ShopCommerce</h3>
+                <p>
+                  A full-stack storefront with a Supabase catalogue and Stripe
+                  checkout.
+                </p>
+                <ul class="project-tech" aria-label="Technologies used">
+                  <li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>Stripe</li>
+                </ul>
+                <details class="project-more">
+                  <summary>View project details</summary>
+                  <p>
+                    A payment webhook creates orders idempotently, so retries
+                    can be processed without duplicating purchases.
+                  </p>
+                </details>
+                <div class="project-actions">
+                  <a
+                    class="project-action"
+                    href="https://shopcommerce-nine.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live preview <span aria-hidden="true">↗</span>
+                  </a>
+                  <a
+                    class="project-action"
+                    href="https://github.com/Lornez07/shopcommerce"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Source code <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" id="project-marqai" role="tabpanel" aria-labelledby="tab-marqai" tabindex="0" hidden>
+              <div class="project-art art-ai" aria-hidden="true">
+                <div class="ai-screen">
+                  <div class="preview-toolbar">
+                    <span>MARQ / NEW SESSION</span>
+                    <span class="ai-session-dot"><i></i> VOICE READY</span>
+                  </div>
+                  <div class="ai-chat">
+                    <div class="ai-greeting"><span class="ai-mark">✳</span><div><small>MARQAI / ASSISTANT</small><strong>What are we<br />working on today?</strong></div></div>
+                    <div class="ai-user-message"><span>Help me organize my ideas for a new project.</span><i>YOU</i></div>
+                    <div class="ai-response"><span class="ai-mark">✳</span><p>Start with the problem you want to solve. We can shape the rest together.</p></div>
+                    <div class="ai-composer"><span>Message MarqAI...</span><b>↑</b></div>
+                  </div>
+                  <div class="ai-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                </div>
+                <span class="art-caption">INTERFACE STUDY / CHAT &amp; VOICE</span>
+              </div>
+              <div class="project-copy">
+                <p class="project-type">Personal project / AI</p>
+                <h3>MarqAI</h3>
+                <p>
+                  An AI companion with real-time chat, voice interaction, and
+                  a custom interface.
+                </p>
+                <ul class="project-tech" aria-label="Technologies used">
+                  <li>React</li><li>TypeScript</li><li>Gemini AI</li><li>Framer Motion</li>
+                </ul>
+                <details class="project-more">
+                  <summary>View project details</summary>
+                  <p>
+                    The app combines Gemini-powered conversations with voice
+                    input and output in an animated, holographic-inspired UI.
+                  </p>
+                </details>
+                <div class="project-actions">
+                  <a
+                    class="project-action"
+                    href="https://github.com/Lornez07/marqai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Source code <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+              </div>
+              <div class="workspace-statusbar">
+                <span><i></i> MAIN</span>
+                <span>INTERFACE STUDIES / PROJECTS</span>
+                <span class="workspace-runtime">READY <b>●</b></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section experience-section" id="experience">
+        <div class="section-shell experience-layout">
+          <div class="section-heading reveal">
+            <p class="section-eyebrow">04 / git log</p>
+            <h2>Learning by<br />building.</h2>
+            <p class="section-intro">
+              The foundations behind the work I do today.
+            </p>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <p class="timeline-date">February — May 2026</p>
+              <div>
+                <h3>IT Intern</h3>
+                <p class="timeline-place">
+                  Convergent Recovery &amp; Management Solutions Inc.
+                </p>
+                <p>
+                  Worked on a cross-platform license plate recognition
+                  application, including an on-device Flutter and ML Kit scan
+                  pipeline.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <p class="timeline-date">Education</p>
+              <div>
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p>
+                  Built a foundation in software development and applied it to
+                  web, mobile, and connected-system projects.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <p class="timeline-date">Academic achievement</p>
+              <div>
+                <h3>Best Software Project</h3>
+                <p>
+                  Recognized for a software project during my Computer Science
+                  studies.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="section-shell contact-layout reveal">
+          <div>
+            <p class="section-eyebrow">05 / new thread</p>
+            <h2>Let’s work<br />together.</h2>
+          </div>
+          <div class="contact-copy">
+            <p>
+              Have a product idea or a systems problem? Tell me what you’re
+              trying to make easier.
+            </p>
+            <a class="button button-primary" href="mailto:znerolestrella@gmail.com">
+              Write an email
+            </a>
+            <div class="social-links">
+              <a href="mailto:znerolestrella@gmail.com">Email</a>
+              <a
+                href="https://www.linkedin.com/in/lorenz-estrella-88b566371"
+                target="_blank"
+                rel="noopener noreferrer"
+              >LinkedIn <span class="external-mark" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell footer-inner">
+        <a class="wordmark footer-wordmark" href="#home">
+          <span class="wordmark-mark" aria-hidden="true">LE</span>
+          <span>Lorenz Estrella</span>
+        </a>
+        <p>Full-stack developer / Valenzuela, Philippines</p>
+        <p>© <span id="current-year"></span> Lorenz F. Estrella</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
