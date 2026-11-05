@@ -12,6 +12,7 @@ const projectPanels = [
   ...document.querySelectorAll('.project-card[role="tabpanel"]'),
 ];
 const projectCurrent = document.querySelector('.workspace-current');
+const projectTitle = document.querySelector('.workspace-project-title');
 const projectTabList = document.querySelector('.workspace-project-list');
 const root = document.documentElement;
 
@@ -65,6 +66,9 @@ function selectProject(index, focusTab = false) {
   }
 
   projectCurrent.textContent = String(index + 1).padStart(2, '0');
+  projectTitle.textContent = projectPanels[index]
+    .querySelector('h3')
+    .textContent.trim();
   if (focusTab) projectTabs[index].focus();
 }
 

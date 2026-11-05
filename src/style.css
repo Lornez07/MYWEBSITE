@@ -850,6 +850,15 @@ h2 {
   color: var(--white);
 }
 
+.contact-email {
+  margin: 0;
+  color: #e5ebf4;
+  font-size: clamp(0.95rem, 1.8vw, 1.2rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  user-select: text;
+}
+
 .external-mark {
   color: #91b5f6;
 }
@@ -1379,9 +1388,6 @@ h2 {
 }
 
 .session-pulse,
-.workspace-presence > span,
-.workspace-statusbar > span:first-child i,
-.preview-live i,
 .ai-session-dot i {
   width: 6px;
   height: 6px;
@@ -1553,11 +1559,9 @@ h2 {
 }
 
 .workspace-path,
-.workspace-presence,
+.workspace-project-total,
 .workspace-sidebar-heading,
-.workspace-sidebar-footer,
-.workspace-tabbar,
-.workspace-statusbar {
+.workspace-tabbar {
   font-family: 'DM Mono', monospace;
 }
 
@@ -1573,14 +1577,11 @@ h2 {
   font-weight: 500;
 }
 
-.workspace-presence {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 8px;
+.workspace-project-total {
   margin: 0;
   color: #93a2b7;
   font-size: 0.57rem;
+  text-align: right;
 }
 
 .workspace-frame {
@@ -1703,22 +1704,6 @@ h2 {
   font-family: 'DM Mono', monospace;
   font-size: 0.55rem;
   text-align: right;
-}
-
-.workspace-sidebar-footer {
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-  margin-top: auto;
-  padding: 15px 16px;
-  border-top: 1px solid rgba(170, 182, 200, 0.1);
-  color: #7d8ca2;
-  font-size: 0.54rem;
-}
-
-.workspace-sidebar-footer strong {
-  color: #c0cbda;
-  font-weight: 400;
 }
 
 .workspace-main {
@@ -1928,39 +1913,6 @@ h2 {
   margin-top: 18px;
   font-family: 'DM Mono', monospace;
   font-size: 0.55rem;
-}
-
-.workspace-statusbar {
-  display: flex;
-  min-height: 25px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  padding: 0 11px;
-  background: #14243a;
-  color: #b7c8df;
-  font-size: 0.52rem;
-}
-
-.workspace-statusbar > span:first-child,
-.workspace-runtime {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-}
-
-.workspace-statusbar > span:first-child i {
-  width: 5px;
-  height: 5px;
-}
-
-.workspace-runtime {
-  color: #9aabc1;
-}
-
-.workspace-runtime b {
-  color: #79d4a3;
-  font-size: 0.42rem;
 }
 
 .preview-toolbar {
@@ -2792,8 +2744,7 @@ h2 {
     border-bottom: 1px solid rgba(170, 182, 200, 0.12);
   }
 
-  .workspace-sidebar-heading,
-  .workspace-sidebar-footer {
+  .workspace-sidebar-heading {
     display: none;
   }
 
@@ -2876,7 +2827,7 @@ h2 {
     font-size: 0.56rem;
   }
 
-  .workspace-presence {
+  .workspace-project-total {
     font-size: 0.48rem;
   }
 
@@ -2906,14 +2857,6 @@ h2 {
     min-height: 205px;
   }
 
-  .workspace-statusbar {
-    font-size: 0.46rem;
-  }
-
-  .workspace-statusbar > span:nth-child(2) {
-    display: none;
-  }
-
   .skill-group,
   .skill-group:first-child,
   .skill-group:last-child {
@@ -2939,8 +2882,7 @@ h2 {
     grid-template-columns: 42px 1fr 91px;
   }
 
-  .workspace-presence {
-    gap: 5px;
+  .workspace-project-total {
     font-size: 0.42rem;
   }
 
