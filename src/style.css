@@ -802,6 +802,31 @@ h2 {
   font-size: 0.77rem;
 }
 
+.certificate-preview {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  color: #a9c5f5;
+  font-size: 0.72rem;
+  text-decoration-color: rgba(169, 197, 245, 0.45);
+  text-underline-offset: 4px;
+  transition:
+    color 180ms ease,
+    text-decoration-color 180ms ease;
+}
+
+.certificate-preview:hover {
+  color: #fff;
+  text-decoration-color: currentColor;
+}
+
+.certificate-preview:focus-visible {
+  border-radius: 2px;
+  outline: 2px solid #8fb5ff;
+  outline-offset: 4px;
+}
+
 .contact-section {
   padding: 100px 0;
   background: var(--navy);
@@ -1682,6 +1707,16 @@ h2 {
   font-size: 0.9rem;
 }
 
+.file-trucking {
+  color: #e8bd73;
+  font-weight: 700;
+}
+
+.file-game {
+  color: #f0a25d;
+  font-weight: 700;
+}
+
 .workspace-project-name {
   overflow: hidden;
   font-size: 0.68rem;
@@ -1770,6 +1805,26 @@ h2 {
   display: grid;
 }
 
+.project-workspace .project-card.has-dashboard {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.project-workspace .project-card.has-dashboard .project-art {
+  min-height: 0;
+  padding: clamp(20px, 3vw, 36px);
+  border-right: 0;
+  border-bottom: 1px solid rgba(170, 182, 200, 0.12);
+}
+
+.project-workspace .project-card.has-dashboard .project-dashboard-shot {
+  width: min(100%, 850px);
+  max-height: 520px;
+}
+
+.project-workspace .project-card.has-dashboard .project-copy {
+  overflow: visible;
+}
+
 .project-workspace .project-card[hidden] {
   display: none !important;
 }
@@ -1815,6 +1870,14 @@ h2 {
 
 .project-workspace .project-art::after {
   display: none;
+}
+
+.project-dashboard-shot,
+.project-live-shot {
+  display: block;
+  width: min(100%, 720px);
+  max-height: 430px;
+  object-fit: contain;
 }
 
 .project-workspace .art-caption {

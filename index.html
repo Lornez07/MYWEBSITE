@@ -184,8 +184,9 @@
             <h2>What I’ve been building.</h2>
           </div>
           <p class="section-intro">
-            Choose a project to see what it does and how I approached it. The
-            interface panels are visual studies, not screenshots or live data.
+            Choose a project to see what it does and how I approached it.
+            Panels use real screenshots where available; the other visuals are
+            studies, not live data.
           </p>
         </div>
 
@@ -195,7 +196,7 @@
               <span></span><span></span><span></span>
             </div>
             <p class="workspace-path">Lorenz / <strong>Selected work</strong></p>
-            <p class="workspace-project-total">5 projects</p>
+            <p class="workspace-project-total">7 projects</p>
           </div>
           <div class="workspace-frame">
             <aside class="workspace-sidebar" aria-label="Project explorer">
@@ -228,6 +229,16 @@
                   <span class="workspace-project-name">MarqAI<small>web / voice</small></span>
                   <span class="workspace-project-index">05</span>
                 </button>
+                <button class="workspace-project" id="tab-rgj" type="button" role="tab" aria-selected="false" aria-controls="project-rgj" tabindex="-1">
+                  <span class="workspace-file-icon file-trucking" aria-hidden="true">R</span>
+                  <span class="workspace-project-name">RGJ Trucking Services<small>web / booking</small></span>
+                  <span class="workspace-project-index">06</span>
+                </button>
+                <button class="workspace-project" id="tab-flappy" type="button" role="tab" aria-selected="false" aria-controls="project-flappy" tabindex="-1">
+                  <span class="workspace-file-icon file-game" aria-hidden="true">F</span>
+                  <span class="workspace-project-name">Flappy Avatar<small>web / game</small></span>
+                  <span class="workspace-project-index">07</span>
+                </button>
               </div>
             </aside>
             <div class="workspace-main">
@@ -236,7 +247,7 @@
                   <span aria-hidden="true">◈</span>
                   <span class="workspace-project-title">Convergent Scanner</span>
                 </span>
-                <span class="workspace-tab-count"><span class="workspace-current">01</span> / 05</span>
+                <span class="workspace-tab-count"><span class="workspace-current">01</span> / 07</span>
               </div>
               <div class="project-grid">
             <article class="project-card is-active" id="project-convergent" role="tabpanel" aria-labelledby="tab-convergent" tabindex="0">
@@ -296,25 +307,16 @@
               </div>
             </article>
 
-            <article class="project-card" id="project-epark" role="tabpanel" aria-labelledby="tab-epark" tabindex="0" hidden>
-              <div class="project-art art-parking" aria-hidden="true">
-                <div class="parking-screen">
-                  <div class="preview-toolbar">
-                    <span>PARKING AVAILABILITY</span>
-                    <span class="preview-live">CONCEPT VIEW</span>
-                  </div>
-                  <div class="parking-summary">
-                    <span><small>SPACE STATUS</small><strong>Availability by space</strong></span>
-                    <span class="parking-open">APP + HARDWARE</span>
-                  </div>
-                  <div class="parking-map">
-                    <div class="parking-lane"><b class="slot-occupied">P</b><b class="slot-open">P</b><b class="slot-occupied">P</b><b class="slot-open">P</b></div>
-                    <div class="parking-lane"><b class="slot-open">P</b><b class="slot-occupied">P</b><b class="slot-open">P</b><b class="slot-open">P</b></div>
-                    <div class="parking-road"><span>PARKING SPACE MAP</span><i></i></div>
-                  </div>
-                  <div class="parking-footer"><span>RESERVATIONS</span><strong>Firebase + ESP32</strong></div>
-                </div>
-                <span class="art-caption">VISUAL STUDY / CONNECTED PARKING</span>
+            <article class="project-card has-dashboard" id="project-epark" role="tabpanel" aria-labelledby="tab-epark" tabindex="0" hidden>
+              <div class="project-art art-parking">
+                <img
+                  class="project-dashboard-shot"
+                  src="/projects/eparkmo-dashboard.png"
+                  alt="E-Park Mo parking overview dashboard showing space availability and parking bay status."
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="art-caption">E-PARK MO / DASHBOARD</span>
               </div>
               <div class="project-copy">
                 <p class="project-type">Thesis / Mobile &amp; IoT</p>
@@ -355,27 +357,16 @@
               </div>
             </article>
 
-            <article class="project-card" id="project-erp" role="tabpanel" aria-labelledby="tab-erp" tabindex="0" hidden>
-              <div class="project-art art-erp" aria-hidden="true">
-                <div class="erp-screen">
-                  <div class="preview-toolbar">
-                    <span>INVENTORY / MOVEMENTS</span>
-                    <span class="erp-filter">CONCEPT VIEW</span>
-                  </div>
-                  <div class="erp-summary">
-                    <span><small>INVENTORY</small><strong>Movement ledger</strong></span>
-                    <span><small>ORDER FLOW</small><strong>Posting</strong></span>
-                    <span><small>ACCESS</small><strong>Roles</strong></span>
-                  </div>
-                  <div class="ledger-table">
-                    <div class="ledger-row ledger-head"><span>ITEM</span><span>MOVEMENT</span><span>EFFECT</span><span>RECORD</span></div>
-                    <div class="ledger-row"><span><i class="ledger-dot dot-blue"></i>Inventory item</span><span>Stock in</span><span>Increase</span><b>ENTRY</b></div>
-                    <div class="ledger-row"><span><i class="ledger-dot dot-violet"></i>Customer order</span><span>Order post</span><span>Decrease</span><b>ENTRY</b></div>
-                    <div class="ledger-row"><span><i class="ledger-dot dot-gold"></i>Inventory item</span><span>Adjustment</span><span>Revised</span><b>ENTRY</b></div>
-                  </div>
-                  <div class="erp-integrity"><span>POSTGRES / ROW-LEVEL SECURITY</span><strong>Stock derives from posted movements</strong></div>
-                </div>
-                <span class="art-caption">VISUAL STUDY / INVENTORY LEDGER</span>
+            <article class="project-card has-dashboard" id="project-erp" role="tabpanel" aria-labelledby="tab-erp" tabindex="0" hidden>
+              <div class="project-art art-erp">
+                <img
+                  class="project-dashboard-shot"
+                  src="/projects/demo-trade-erp-dashboard.png"
+                  alt="Demo Trade ERP dashboard with sales, orders, stock status, and recent order records."
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="art-caption">DEMO TRADE ERP / DASHBOARD</span>
               </div>
               <div class="project-copy">
                 <p class="project-type">Product build / Business systems</p>
@@ -416,22 +407,16 @@
               </div>
             </article>
 
-            <article class="project-card" id="project-shop" role="tabpanel" aria-labelledby="tab-shop" tabindex="0" hidden>
-              <div class="project-art art-commerce" aria-hidden="true">
-                <div class="commerce-screen">
-                  <div class="preview-toolbar">
-                    <span>SHOPCOMMERCE</span>
-                    <span class="commerce-menu">SHOP &nbsp; / &nbsp; ABOUT &nbsp; / &nbsp; CART</span>
-                  </div>
-                  <div class="commerce-heading"><span>PRODUCT<br />CATALOG.</span><small>LAYOUT / STUDY</small></div>
-                  <div class="commerce-products">
-                    <div class="commerce-product"><div class="product-object object-vase"><i></i></div><span>PRODUCT</span></div>
-                    <div class="commerce-product"><div class="product-object object-lamp"><i></i></div><span>PRODUCT</span></div>
-                    <div class="commerce-product"><div class="product-object object-bowl"><i></i></div><span>PRODUCT</span></div>
-                  </div>
-                  <div class="commerce-foot"><span>SECURE CHECKOUT</span><span>POWERED BY STRIPE ↗</span></div>
-                </div>
-                <span class="art-caption">VISUAL STUDY / E-COMMERCE</span>
+            <article class="project-card has-dashboard" id="project-shop" role="tabpanel" aria-labelledby="tab-shop" tabindex="0" hidden>
+              <div class="project-art art-commerce">
+                <img
+                  class="project-live-shot"
+                  src="/projects/shopcommerce-preview.png"
+                  alt="Screenshot of the ShopCommerce storefront showing its kitchenware catalog and product categories."
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="art-caption">SHOPCOMMERCE / LIVE SITE</span>
               </div>
               <div class="project-copy">
                 <p class="project-type">Product build / E-commerce</p>
@@ -517,6 +502,104 @@
                 </div>
               </div>
             </article>
+            <article class="project-card" id="project-rgj" role="tabpanel" aria-labelledby="tab-rgj" tabindex="0" hidden>
+              <div class="project-art art-trucking">
+                <img
+                  class="project-live-shot"
+                  src="/projects/rgj-trucking-preview.png"
+                  alt="Screenshot of the RGJ Trucking Services homepage, showing its Luzon service area and truck booking options."
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="art-caption">RGJ TRUCKING SERVICES / LIVE SITE</span>
+              </div>
+              <div class="project-copy">
+                <p class="project-type">Client project / Booking website</p>
+                <h3>RGJ Trucking Services</h3>
+                <p>
+                  A service website for a trucking company, with booking
+                  inquiries and email notifications.
+                </p>
+                <ul class="project-tech" aria-label="Technologies used">
+                  <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Node.js</li><li>Vercel</li>
+                </ul>
+                <details class="project-more">
+                  <summary>View project details</summary>
+                  <p>
+                    The site presents trucking services and routes, with a
+                    serverless booking flow that sends email notifications.
+                  </p>
+                </details>
+                <div class="project-actions">
+                  <a
+                    class="project-action"
+                    href="https://rgjtrucking.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live preview <span aria-hidden="true">↗</span>
+                  </a>
+                  <a
+                    class="project-action"
+                    href="https://github.com/Lornez07/RGJ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Source code <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" id="project-flappy" role="tabpanel" aria-labelledby="tab-flappy" tabindex="0" hidden>
+              <div class="project-art art-flappy">
+                <img
+                  class="project-live-shot"
+                  src="/projects/flappy-avatar-preview.png"
+                  alt="Screenshot of Flappy Avatar showing the playable game, avatar selection, and score panel."
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="art-caption">FLAPPY AVATAR / LIVE SITE</span>
+              </div>
+              <div class="project-copy">
+                <p class="project-type">Personal project / Browser game</p>
+                <h3>Flappy Avatar</h3>
+                <p>
+                  A one-button arcade game where players fly with a custom
+                  avatar and compete on a leaderboard.
+                </p>
+                <ul class="project-tech" aria-label="Technologies used">
+                  <li>React</li><li>TypeScript</li><li>Canvas</li><li>Supabase</li>
+                </ul>
+                <details class="project-more">
+                  <summary>View project details</summary>
+                  <p>
+                    Players can choose an emoji or upload a cropped photo.
+                    The game uses high-DPI canvas rendering, frame-rate
+                    independent physics, and a Supabase leaderboard.
+                  </p>
+                </details>
+                <div class="project-actions">
+                  <a
+                    class="project-action"
+                    href="https://flappy-avatar.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live preview <span aria-hidden="true">↗</span>
+                  </a>
+                  <a
+                    class="project-action"
+                    href="https://github.com/Lornez07/flappy-avatar"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Source code <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
               </div>
             </div>
           </div>
@@ -565,6 +648,81 @@
                   Recognized for a software project during my Computer Science
                   studies.
                 </p>
+              </div>
+            </article>
+            <article class="timeline-item certificate-item reveal">
+              <p class="timeline-date">October 12, 2026</p>
+              <div>
+                <h3>Foundations of Project Management</h3>
+                <p class="timeline-place">Google / Coursera</p>
+                <a
+                  class="certificate-preview"
+                  href="/certificates/project-management.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Preview certificate <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+            <article class="timeline-item certificate-item reveal">
+              <p class="timeline-date">July 15, 2026</p>
+              <div>
+                <h3>AI for App Building</h3>
+                <p class="timeline-place">Google / Coursera</p>
+                <a
+                  class="certificate-preview"
+                  href="/certificates/ai-for-app-building.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Preview certificate <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+            <article class="timeline-item certificate-item reveal">
+              <p class="timeline-date">July 13, 2026</p>
+              <div>
+                <h3>AI Fundamentals</h3>
+                <p class="timeline-place">Google / Coursera</p>
+                <a
+                  class="certificate-preview"
+                  href="/certificates/ai-fundamentals.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Preview certificate <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+            <article class="timeline-item certificate-item reveal">
+              <p class="timeline-date">July 10, 2026</p>
+              <div>
+                <h3>Start Writing Prompts like a Pro</h3>
+                <p class="timeline-place">Google / Coursera</p>
+                <a
+                  class="certificate-preview"
+                  href="/certificates/prompt-engineering.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Preview certificate <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+            <article class="timeline-item certificate-item reveal">
+              <p class="timeline-date">July 5, 2026</p>
+              <div>
+                <h3>Google AI Essentials</h3>
+                <p class="timeline-place">Google / Coursera</p>
+                <a
+                  class="certificate-preview"
+                  href="/certificates/google-ai-essentials.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Preview certificate <span aria-hidden="true">↗</span>
+                </a>
               </div>
             </article>
           </div>
